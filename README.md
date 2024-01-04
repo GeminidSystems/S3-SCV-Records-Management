@@ -33,12 +33,18 @@ The Apex side then handles the deletion of all ConversationEntry records related
    - After initialization, click `Manage Consumer Details`:
       - Save the `Consumer Key` and `Consumer Secret` for later use.
 
+5. **Add API_Only Profile to Connected App:**
+   - After creating the connected app, navigate back to `App Manager` 
+   - Navigate to the newly created app and click `Manage`
+   - `Profiles` -> `Manage Profiles` 
+   - Add `API_Only` and save
+
 ## Setting up Lambda
 1. **Create IAM Policy:**
    - Create a new `IAM Policy` with the required permissions.
 ```
          {
-            "Version": "2023-12-19",
+            "Version": "2012-10-17",
             "Statement": [
                   {
                      "Effect": "Allow",
