@@ -1,4 +1,4 @@
-# Sync_Call_Deletion
+# S3-SCV-Records-Management
 
 This repository showcases an integration for syncing transcript record deletion between AWS Amazon Connect and Salesforce Service Cloud Voice. 
 The process involves placing an event trigger on a Lambda function, which, when a corresponding S3 `.wav` recording is deleted after 90 days, triggers the Lambda to make a REST callout to an Apex endpoint. 
